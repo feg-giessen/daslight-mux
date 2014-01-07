@@ -20,6 +20,8 @@
 !/daslight_mux/*.ise
 !/daslight_mux/*.ucf
 
+*_tempImpact.svf
+
 *.svf
 *.scr
 *.bak
