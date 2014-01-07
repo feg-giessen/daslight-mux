@@ -60,9 +60,9 @@
 <wire x1="59.995" y1="0" x2="59.995" y2="55.87" width="0" layer="20"/>
 <wire x1="59.995" y1="55.87" x2="0" y2="55.87" width="0" layer="20"/>
 <wire x1="0" y1="55.87" x2="0" y2="0" width="0" layer="20"/>
-<text x="19.685" y="1.5875" size="1" layer="25">peschuster 01/2014</text>
-<text x="19.685" y="3.4925" size="1" layer="25">http://github.com/feg-giessen/daslight-mux</text>
-<text x="40.64" y="38.4175" size="2.5" layer="16" font="fixed" rot="MR0">DaslightMux</text>
+<text x="16.51" y="1.5875" size="1" layer="25">peschuster 01/2014</text>
+<text x="16.51" y="3.4925" size="1" layer="25">http://github.com/feg-giessen/daslight-mux</text>
+<text x="41.91" y="38.4175" size="2.5" layer="16" rot="MR0">DaslightMux</text>
 </plain>
 <libraries>
 <library name="xc9572xl-tq100">
@@ -1748,49 +1748,53 @@ Please make sure your boards conform to these design rules.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="U1" library="xc9572xl-tq100" package="TQ100" value="XC9572XL_TQ100" x="28.575" y="20.6375"/>
+<element name="U1" library="xc9572xl-tq100" package="TQ100" value="XC9572XL" x="28.575" y="20.6375" smashed="yes">
+<attribute name="NAME" x="23.77" y="22.4425" size="1.27" layer="25"/>
+<attribute name="VALUE" x="23.77" y="20.1025" size="1.27" layer="27"/>
+</element>
 <element name="SV1" library="con-harting-ml" package="ML14" value="JTAG" x="54.61" y="42.2275" smashed="yes" rot="R90">
 <attribute name="OC_NEWARK" value="unknown" x="78.74" y="65.0875" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="78.74" y="65.0875" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="" x="78.74" y="65.0875" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="78.74" y="65.0875" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="47.625" y="40.9575" size="1.778" layer="25" ratio="10" rot="SR270"/>
-<attribute name="VALUE" x="47.625" y="54.2925" size="1.778" layer="25" ratio="10" rot="SR270"/>
+<attribute name="VALUE" x="47.625" y="54.61" size="1.778" layer="25" ratio="10" rot="SR270"/>
 </element>
 <element name="SV2" library="con-harting-ml" package="ML10" value="Daslight HE10" x="5.715" y="40.3225" smashed="yes" rot="R90">
 <attribute name="OC_NEWARK" value="unknown" x="5.715" y="40.3225" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="5.715" y="40.3225" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="" x="5.715" y="40.3225" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="5.715" y="40.3225" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="16.1925" y="29.845" size="1.778" layer="25" ratio="10" rot="R90"/>
-<attribute name="VALUE" x="13.335" y="29.845" size="1.778" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="12.7" y="29.845" size="1.778" layer="25" ratio="10" rot="R90"/>
 </element>
 <element name="SV3" library="con-harting-ml" package="ML16" value="B1-16" x="30.48" y="50.4825" smashed="yes">
 <attribute name="OC_NEWARK" value="unknown" x="30.48" y="50.4825" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="30.48" y="50.4825" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="30.48" y="50.4825" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="30.48" y="50.4825" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="29.845" y="43.4975" size="1.778" layer="25" ratio="10"/>
-<attribute name="VALUE" x="38.1" y="43.4975" size="1.778" layer="25" ratio="10"/>
+<attribute name="VALUE" x="44.45" y="45.4025" size="1.778" layer="25" ratio="10" rot="R180"/>
 </element>
 <element name="SV4" library="con-harting-ml" package="ML16" value="B17-32" x="54.61" y="14.9225" smashed="yes" rot="R270">
 <attribute name="OC_NEWARK" value="unknown" x="54.61" y="14.9225" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="54.61" y="14.9225" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="" x="54.61" y="14.9225" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="54.61" y="14.9225" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="45.4025" y="28.2575" size="1.778" layer="25" ratio="10" rot="SR270"/>
-<attribute name="VALUE" x="47.9425" y="28.8925" size="1.778" layer="25" ratio="10" rot="SR270"/>
+<attribute name="VALUE" x="47.625" y="28.575" size="1.778" layer="25" ratio="10" rot="SR270"/>
 </element>
 <element name="SV5" library="con-harting-ml" package="ML16" value="B33-48" x="5.715" y="14.9225" smashed="yes" rot="R90">
 <attribute name="OC_NEWARK" value="unknown" x="5.715" y="14.9225" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="5.715" y="14.9225" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="" x="5.715" y="14.9225" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="5.715" y="14.9225" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="15.5575" y="0.635" size="1.778" layer="25" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="12.7" y="0.635" size="1.778" layer="25" ratio="10" rot="R90"/>
 </element>
-<element name="C1" library="resistor" package="C0603" value="100n" x="17.145" y="13.0175" rot="R180"/>
-<element name="C2" library="resistor" package="C1206" value="10u" x="5.715" y="52.3875"/>
+<element name="C1" library="resistor" package="C0603" value="100n" x="17.145" y="13.0175" smashed="yes" rot="R180">
+<attribute name="NAME" x="18.034" y="12.2555" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="18.034" y="10.6045" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="C2" library="resistor" package="C1206" value="10u" x="5.715" y="52.3875" smashed="yes">
+<attribute name="NAME" x="4.445" y="53.5305" size="1.27" layer="25"/>
+<attribute name="VALUE" x="7.9375" y="53.467" size="1.27" layer="27"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
