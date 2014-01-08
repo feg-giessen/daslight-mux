@@ -5190,6 +5190,160 @@ DIN A4, landscape with location and doc. field</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="jumper">
+<description>&lt;b&gt;Jumpers&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="SJ_2W">
+<description>&lt;b&gt;Solder jumper&lt;/b&gt;</description>
+<wire x1="3.175" y1="-1.524" x2="-3.175" y2="-1.524" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="1.524" x2="3.429" y2="1.27" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-3.429" y1="1.27" x2="-3.175" y2="1.524" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-3.429" y1="-1.27" x2="-3.175" y2="-1.524" width="0.1524" layer="21" curve="90"/>
+<wire x1="3.175" y1="-1.524" x2="3.429" y2="-1.27" width="0.1524" layer="21" curve="90"/>
+<wire x1="3.429" y1="-1.27" x2="3.429" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-3.429" y1="-1.27" x2="-3.429" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="1.524" x2="3.175" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="2.794" y1="0" x2="3.302" y2="0" width="0.1524" layer="51"/>
+<wire x1="-2.794" y1="0" x2="-3.302" y2="0" width="0.1524" layer="51"/>
+<wire x1="0" y1="0.762" x2="0" y2="1.397" width="0.1524" layer="51"/>
+<wire x1="0" y1="-1.397" x2="0" y2="-0.762" width="0.1524" layer="51"/>
+<wire x1="2.032" y1="0.127" x2="2.032" y2="-0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
+<wire x1="-2.032" y1="-0.127" x2="-2.032" y2="0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
+<smd name="1" x="-2.54" y="0" dx="1.27" dy="2.54" layer="1"/>
+<smd name="2" x="0" y="0" dx="1.27" dy="2.54" layer="1"/>
+<smd name="3" x="2.54" y="0" dx="1.27" dy="2.54" layer="1"/>
+<text x="-3.429" y="1.778" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-0.1001" y="0" size="0.02" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.508" y1="-0.762" x2="0.508" y2="0.762" layer="51"/>
+</package>
+<package name="SJ_2">
+<description>&lt;b&gt;Solder jumper&lt;/b&gt;</description>
+<wire x1="2.159" y1="-1.016" x2="-2.159" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="2.159" y1="1.016" x2="2.413" y2="0.762" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.413" y1="0.762" x2="-2.159" y2="1.016" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.413" y1="-0.762" x2="-2.159" y2="-1.016" width="0.1524" layer="21" curve="90"/>
+<wire x1="2.159" y1="-1.016" x2="2.413" y2="-0.762" width="0.1524" layer="21" curve="90"/>
+<wire x1="2.413" y1="-0.762" x2="2.413" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-2.413" y1="-0.762" x2="-2.413" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-2.159" y1="1.016" x2="2.159" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="1.778" y1="0" x2="2.286" y2="0" width="0.1524" layer="51"/>
+<wire x1="-1.778" y1="0" x2="-2.286" y2="0" width="0.1524" layer="51"/>
+<wire x1="0" y1="0.762" x2="0" y2="1.016" width="0.1524" layer="51"/>
+<wire x1="0" y1="-1.016" x2="0" y2="-0.762" width="0.1524" layer="51"/>
+<wire x1="1.016" y1="0.127" x2="1.016" y2="-0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
+<wire x1="-1.016" y1="-0.127" x2="-1.016" y2="0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
+<smd name="1" x="-1.524" y="0" dx="1.1684" dy="1.6002" layer="1"/>
+<smd name="2" x="0" y="0" dx="1.1684" dy="1.6002" layer="1"/>
+<smd name="3" x="1.524" y="0" dx="1.1684" dy="1.6002" layer="1"/>
+<text x="-2.413" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-0.1001" y="0" size="0.02" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.508" y1="-0.762" x2="0.508" y2="0.762" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="SJ_2">
+<wire x1="-0.635" y1="-1.397" x2="0.635" y2="-1.397" width="1.27" layer="94" curve="180" cap="flat"/>
+<wire x1="-0.635" y1="1.397" x2="0.635" y2="1.397" width="1.27" layer="94" curve="-180" cap="flat"/>
+<wire x1="1.27" y1="-0.635" x2="-1.27" y2="-0.635" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="-0.635" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0.635" x2="1.27" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+<text x="2.54" y="0.381" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-1.905" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-1.27" y1="-0.635" x2="1.27" y2="0.635" layer="94"/>
+<pin name="3" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="1" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="2" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SJ2W" prefix="SJ" uservalue="yes">
+<description>SMD solder &lt;b&gt;JUMPER&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="SJ_2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="W" package="SJ_2W">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="" package="SJ_2">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="solpad">
+<description>&lt;b&gt;Solder Pads/Test Points&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="LSP10">
+<description>&lt;b&gt;SOLDER PAD&lt;/b&gt;&lt;p&gt;
+drill 1.0 mm</description>
+<wire x1="-1.27" y1="0.254" x2="-1.27" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="0.254" x2="1.27" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="0.254" x2="1.143" y2="0.254" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-0.254" x2="1.143" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-0.254" x2="-1.143" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="0.254" x2="-1.143" y2="0.254" width="0.1524" layer="21"/>
+<wire x1="1.143" y1="0.254" x2="0.635" y2="0.254" width="0.1524" layer="51"/>
+<wire x1="-1.143" y1="-0.254" x2="-0.635" y2="-0.254" width="0.1524" layer="51"/>
+<wire x1="0.635" y1="0.254" x2="0.635" y2="-0.254" width="0.1524" layer="51"/>
+<wire x1="0.635" y1="0.254" x2="-0.635" y2="0.254" width="0.1524" layer="51"/>
+<wire x1="0.635" y1="-0.254" x2="1.143" y2="-0.254" width="0.1524" layer="51"/>
+<wire x1="-0.635" y1="0.254" x2="-0.635" y2="-0.254" width="0.1524" layer="51"/>
+<wire x1="-0.635" y1="0.254" x2="-1.143" y2="0.254" width="0.1524" layer="51"/>
+<wire x1="-0.635" y1="-0.254" x2="0.635" y2="-0.254" width="0.1524" layer="51"/>
+<pad name="MP" x="0" y="0" drill="1.016" diameter="2.159" shape="octagon"/>
+<text x="-1.27" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="0" y="0.254" size="0.0254" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="LSP">
+<wire x1="-1.016" y1="2.032" x2="1.016" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="0" x2="1.016" y2="2.032" width="0.254" layer="94"/>
+<circle x="0" y="1.016" radius="1.016" width="0.4064" layer="94"/>
+<text x="-1.27" y="2.921" size="1.778" layer="95">&gt;NAME</text>
+<pin name="MP" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="LSP10" prefix="LSP">
+<description>&lt;b&gt;SOLDER PAD&lt;/b&gt;&lt;p&gt; drill 1.0 mm, distributor Buerklin, 12H555</description>
+<gates>
+<gate name="1" symbol="LSP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LSP10">
+<connects>
+<connect gate="1" pin="MP" pad="MP"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -5207,9 +5361,8 @@ DIN A4, landscape with location and doc. field</description>
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
-<part name="SV2" library="con-harting-ml" deviceset="ML10" device="" value="Daslight HE10"/>
+<part name="SV2" library="con-harting-ml" deviceset="ML10" device="" value="HE10"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="P+4" library="supply1" deviceset="VCC" device=""/>
 <part name="SV3" library="con-harting-ml" deviceset="ML16" device="" value="B1-16"/>
 <part name="SV4" library="con-harting-ml" deviceset="ML16" device="" value="B17-32"/>
 <part name="SV5" library="con-harting-ml" deviceset="ML16" device="" value="B33-48"/>
@@ -5218,6 +5371,11 @@ DIN A4, landscape with location and doc. field</description>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" deviceset="VCC" device=""/>
 <part name="FRAME1" library="frames" deviceset="A4L-LOC" device="" value="Daslight MUX"/>
+<part name="SJ1" library="jumper" deviceset="SJ2W" device=""/>
+<part name="P+6" library="supply1" deviceset="VCC" device=""/>
+<part name="EXT_VCC" library="solpad" deviceset="LSP10" device=""/>
+<part name="GND" library="solpad" deviceset="LSP10" device=""/>
+<part name="GND5" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5237,7 +5395,6 @@ DIN A4, landscape with location and doc. field</description>
 <instance part="P+3" gate="VCC" x="111.76" y="116.84" rot="R270"/>
 <instance part="SV2" gate="G$1" x="226.06" y="142.24"/>
 <instance part="GND3" gate="1" x="203.2" y="137.16" rot="R270"/>
-<instance part="P+4" gate="VCC" x="200.66" y="147.32" rot="R90"/>
 <instance part="SV3" gate="1" x="226.06" y="114.3"/>
 <instance part="SV4" gate="1" x="226.06" y="83.82"/>
 <instance part="SV5" gate="1" x="226.06" y="53.34"/>
@@ -5246,6 +5403,11 @@ DIN A4, landscape with location and doc. field</description>
 <instance part="GND4" gate="1" x="149.86" y="91.44" rot="R270"/>
 <instance part="P+5" gate="VCC" x="149.86" y="104.14" rot="R90"/>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
+<instance part="SJ1" gate="G$1" x="187.96" y="147.32" rot="R270"/>
+<instance part="P+6" gate="VCC" x="187.96" y="157.48"/>
+<instance part="EXT_VCC" gate="1" x="170.18" y="147.32" rot="R90"/>
+<instance part="GND" gate="1" x="170.18" y="142.24" rot="R90"/>
+<instance part="GND5" gate="1" x="175.26" y="142.24" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -5330,6 +5492,10 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="170.18" y1="93.98" x2="170.18" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="91.44" x2="160.02" y2="91.44" width="0.1524" layer="91"/>
 <junction x="160.02" y="91.44"/>
+</segment>
+<segment>
+<pinref part="GND" gate="1" pin="MP"/>
+<pinref part="GND5" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="TMS" class="0">
@@ -5419,11 +5585,6 @@ DIN A4, landscape with location and doc. field</description>
 <junction x="99.06" y="121.92"/>
 </segment>
 <segment>
-<pinref part="SV2" gate="G$1" pin="10"/>
-<pinref part="P+4" gate="VCC" pin="VCC"/>
-<wire x1="203.2" y1="147.32" x2="218.44" y2="147.32" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="P+5" gate="VCC" pin="VCC"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="152.4" y1="104.14" x2="160.02" y2="104.14" width="0.1524" layer="91"/>
@@ -5432,6 +5593,11 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="160.02" y1="104.14" x2="170.18" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="104.14" x2="170.18" y2="101.6" width="0.1524" layer="91"/>
 <junction x="160.02" y="104.14"/>
+</segment>
+<segment>
+<pinref part="SJ1" gate="G$1" pin="2"/>
+<pinref part="P+6" gate="VCC" pin="VCC"/>
+<wire x1="187.96" y1="154.94" x2="187.96" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="B40" class="0">
@@ -6104,6 +6270,20 @@ DIN A4, landscape with location and doc. field</description>
 <pinref part="SV3" gate="1" pin="2"/>
 <wire x1="218.44" y1="104.14" x2="213.36" y2="104.14" width="0.1524" layer="91"/>
 <label x="213.36" y="104.14" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="SV2" gate="G$1" pin="10"/>
+<wire x1="193.04" y1="147.32" x2="218.44" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="SJ1" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="SJ1" gate="G$1" pin="3"/>
+<wire x1="182.88" y1="147.32" x2="172.72" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="EXT_VCC" gate="1" pin="MP"/>
 </segment>
 </net>
 </nets>
