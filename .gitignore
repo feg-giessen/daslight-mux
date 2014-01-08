@@ -14,11 +14,10 @@
 *.zip
 
 # Xilinx
-/daslight_mux/*
-!/daslight_mux/*.vhd
-!/daslight_mux/*.vhdl
-!/daslight_mux/*.ise
-!/daslight_mux/*.ucf
+/xc9500xl/*
+!/xc9500xl/*.vhd
+!/xc9500xl/*.xise
+!/xc9500xl/*.ucf
 
 # sim
 sim/work
