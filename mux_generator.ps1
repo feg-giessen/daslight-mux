@@ -13,7 +13,16 @@ for ($i = 1; $i -le $i_max; $i++) {
             }
 
             $s += " buttons($j)"
+
             $c++;
+
+            if ($c -gt 0 -and $c % 4 -eq 0) {
+                $s += [System.Environment]::NewLine
+                if ($c % 4 -eq 0) {
+                    $s += New-Object string 9
+                    $s += New-Object string 9
+                }
+            }
         }
     }
 
@@ -21,7 +30,7 @@ for ($i = 1; $i -le $i_max; $i++) {
         $s += "'0'"
     }
 
-    $s += ";"
+    $s += ";" + [System.Environment]::NewLine
 
     echo $s
 }

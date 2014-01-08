@@ -20,21 +20,12 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx primitives in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
-
 entity mux is
     Port ( buttons : in  STD_LOGIC_VECTOR (48 downto 1);
            he10 : out STD_LOGIC_VECTOR (8 downto 1));
 end mux;
 
-architecture Behavioral of mux is
+architecture behavioral of mux is
 begin
 
 he10(1) <= buttons(1) or buttons(3) or buttons(5) 
@@ -84,6 +75,4 @@ he10(6) <= buttons(32) or buttons(33) or buttons(34) or buttons(35)
 he10(7) <='0';
 he10(8) <='0';
 
-
-end Behavioral;
-
+end behavioral;
