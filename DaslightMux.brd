@@ -66,6 +66,7 @@
 <hole x="44" y="3.4" drill="3.2"/>
 <hole x="20" y="45.4" drill="3.2"/>
 <hole x="44" y="39.4" drill="3.2"/>
+<text x="38.1" y="11.7475" size="1.27" layer="25">U1</text>
 </plain>
 <libraries>
 <library name="xc9572xl-tq100">
@@ -1847,7 +1848,7 @@ Please make sure your boards conform to these design rules.</description>
 </autorouter>
 <elements>
 <element name="U1" library="xc9572xl-tq100" package="TQ100" value="XC9572XL" x="30.575" y="20.5375" smashed="yes">
-<attribute name="NAME" x="25.77" y="22.3425" size="1.27" layer="25"/>
+<attribute name="NAME" x="25.77" y="21.7075" size="1.27" layer="25"/>
 <attribute name="VALUE" x="25.77" y="20.0025" size="1.27" layer="25"/>
 </element>
 <element name="SV2" library="con-harting-ml" package="ML10L" value="HE10" x="38.985259375" y="47.842115625" smashed="yes">

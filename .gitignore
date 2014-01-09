@@ -54,3 +54,7 @@ vsim.dbg
 *~
 *.elf
 *.ace
+
+# eagle temp/backup files
+*.b#*
+*.s#*
