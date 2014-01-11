@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mm" style="lines" multiple="1" display="no" altdistance="12.5" altunitdist="mil" altunit="mil"/>
+<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="6.75" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -20,7 +20,7 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -67,6 +67,7 @@
 <hole x="20" y="45.4" drill="3.2"/>
 <hole x="44" y="39.4" drill="3.2"/>
 <text x="38.1" y="11.7475" size="1.27" layer="25">U1</text>
+<text x="28.575" y="4.1275" size="1.016" layer="25">PIN 9..13</text>
 </plain>
 <libraries>
 <library name="xc9572xl-tq100">
@@ -1900,6 +1901,21 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="20.32" y="40.386" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="25.9715" y="40.005" size="1.27" layer="25" ratio="10" rot="R270"/>
 </element>
+<element name="LSP9" library="solpad" package="LSP10" value="LSP10" x="24.13" y="2.54" smashed="yes">
+<attribute name="VALUE" x="24.13" y="2.794" size="0.0254" layer="27"/>
+</element>
+<element name="LSP10" library="solpad" package="LSP10" value="LSP10" x="27.94" y="2.54" smashed="yes">
+<attribute name="VALUE" x="27.94" y="2.794" size="0.0254" layer="27"/>
+</element>
+<element name="LSP11" library="solpad" package="LSP10" value="LSP10" x="31.75" y="2.54" smashed="yes">
+<attribute name="VALUE" x="31.75" y="2.794" size="0.0254" layer="27"/>
+</element>
+<element name="LSP12" library="solpad" package="LSP10" value="LSP10" x="35.56" y="2.54" smashed="yes">
+<attribute name="VALUE" x="35.56" y="2.794" size="0.0254" layer="27"/>
+</element>
+<element name="LSP13" library="solpad" package="LSP10" value="LSP10" x="39.37" y="2.54" smashed="yes">
+<attribute name="VALUE" x="39.37" y="2.794" size="0.0254" layer="27"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -2566,6 +2582,42 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="EXT_VCC" pad="MP"/>
 <wire x1="23.099703125" y1="49.30241875" x2="23.099703125" y2="49.05161875" width="0.6096" layer="1"/>
 <wire x1="23.099703125" y1="49.05161875" x2="25.738840625" y2="46.41248125" width="0.6096" layer="1"/>
+</signal>
+<signal name="N$11">
+<contactref element="U1" pad="9"/>
+<contactref element="LSP9" pad="MP"/>
+<wire x1="28.575" y1="12.6375" x2="28.575" y2="5.6896" width="0.254" layer="1"/>
+<wire x1="28.575" y1="5.6896" x2="27.3558" y2="4.4704" width="0.254" layer="1"/>
+<wire x1="27.3558" y1="4.4704" x2="26.0604" y2="4.4704" width="0.254" layer="1"/>
+<wire x1="26.0604" y1="4.4704" x2="24.13" y2="2.54" width="0.254" layer="1"/>
+</signal>
+<signal name="N$12">
+<contactref element="U1" pad="10"/>
+<contactref element="LSP10" pad="MP"/>
+<wire x1="29.075" y1="12.6375" x2="29.075" y2="3.675" width="0.254" layer="1"/>
+<wire x1="29.075" y1="3.675" x2="27.94" y2="2.54" width="0.254" layer="1"/>
+</signal>
+<signal name="N$13">
+<contactref element="U1" pad="11"/>
+<contactref element="LSP11" pad="MP"/>
+<wire x1="29.575" y1="12.6375" x2="29.575" y2="4.715" width="0.254" layer="1"/>
+<wire x1="29.575" y1="4.715" x2="31.75" y2="2.54" width="0.254" layer="1"/>
+</signal>
+<signal name="N$14">
+<contactref element="U1" pad="12"/>
+<contactref element="LSP12" pad="MP"/>
+<wire x1="30.075" y1="12.6375" x2="30.075" y2="4.85" width="0.254" layer="1"/>
+<wire x1="30.075" y1="4.85" x2="30.94355" y2="3.98145" width="0.254" layer="1"/>
+<wire x1="30.94355" y1="3.98145" x2="34.11855" y2="3.98145" width="0.254" layer="1"/>
+<wire x1="34.11855" y1="3.98145" x2="35.56" y2="2.54" width="0.254" layer="1"/>
+</signal>
+<signal name="N$15">
+<contactref element="U1" pad="13"/>
+<contactref element="LSP13" pad="MP"/>
+<wire x1="30.575" y1="12.6375" x2="30.575" y2="4.985" width="0.254" layer="1"/>
+<wire x1="30.575" y1="4.985" x2="31.115" y2="4.445" width="0.254" layer="1"/>
+<wire x1="31.115" y1="4.445" x2="37.465" y2="4.445" width="0.254" layer="1"/>
+<wire x1="37.465" y1="4.445" x2="39.37" y2="2.54" width="0.254" layer="1"/>
 </signal>
 </signals>
 </board>

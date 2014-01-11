@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -5554,6 +5554,11 @@ W = angled&lt;p&gt;
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="C2" library="resistor" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="SV1" library="con-lstb" deviceset="MA03-2" device="" value="JTAG"/>
+<part name="LSP9" library="solpad" deviceset="LSP10" device=""/>
+<part name="LSP10" library="solpad" deviceset="LSP10" device=""/>
+<part name="LSP11" library="solpad" deviceset="LSP10" device=""/>
+<part name="LSP12" library="solpad" deviceset="LSP10" device=""/>
+<part name="LSP13" library="solpad" deviceset="LSP10" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5588,6 +5593,11 @@ W = angled&lt;p&gt;
 <instance part="GND7" gate="1" x="226.06" y="86.36"/>
 <instance part="C2" gate="G$1" x="167.64" y="99.06"/>
 <instance part="SV1" gate="1" x="157.48" y="58.42" rot="R180"/>
+<instance part="LSP9" gate="1" x="22.86" y="63.5" rot="R90"/>
+<instance part="LSP10" gate="1" x="17.78" y="58.42" rot="R90"/>
+<instance part="LSP11" gate="1" x="20.32" y="60.96" rot="R90"/>
+<instance part="LSP12" gate="1" x="15.24" y="55.88" rot="R90"/>
+<instance part="LSP13" gate="1" x="20.32" y="142.24" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -6456,6 +6466,41 @@ W = angled&lt;p&gt;
 <pinref part="SJ1" gate="G$1" pin="3"/>
 <wire x1="182.88" y1="147.32" x2="172.72" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="EXT_VCC" gate="1" pin="MP"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PB01_13"/>
+<pinref part="LSP9" gate="1" pin="MP"/>
+<wire x1="25.4" y1="63.5" x2="35.56" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PB01_15"/>
+<pinref part="LSP10" gate="1" pin="MP"/>
+<wire x1="20.32" y1="58.42" x2="35.56" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PB01_14"/>
+<pinref part="LSP11" gate="1" pin="MP"/>
+<wire x1="22.86" y1="60.96" x2="35.56" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PB01_16"/>
+<pinref part="LSP12" gate="1" pin="MP"/>
+<wire x1="17.78" y1="55.88" x2="35.56" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PB00_01"/>
+<pinref part="LSP13" gate="1" pin="MP"/>
+<wire x1="22.86" y1="142.24" x2="35.56" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
